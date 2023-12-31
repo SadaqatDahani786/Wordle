@@ -21,7 +21,18 @@ describe('useTheme Hook', () => {
       expect(result.current.theme.palette).toMatchObject(appTheme.palette.light)
    })
 
-   //2) Test -> toggle the dark mode and swap theme
+   //2) Test -> toggle the dark mode
+   it('Should be able to togle the dark mode', () => {
+      const darkMode = result.current.darkMode
+
+      act(() => {
+         result.current.toggleDarkMode()
+      })
+
+      expect(result.current.darkMode).toBe(!darkMode)
+   })
+
+   //3) Test -> toggle the dark mode and get dark theme
    it('Should return the app dark theme after toggling dark mode', () => {
       act(() => {
          result.current.toggleDarkMode()

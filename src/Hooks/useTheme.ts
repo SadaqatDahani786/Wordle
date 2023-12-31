@@ -38,12 +38,11 @@ const useTheme = () => {
    const toggleDarkMode = (): void => {
       setDarkMode((mode) => {
          addItem('dark-mode', mode ? 'false' : 'true')
-         console.log(storedItems)
          return !mode
       })
    }
 
-   return { theme, toggleDarkMode }
+   return { theme, darkMode, toggleDarkMode }
 }
 
 export default useTheme

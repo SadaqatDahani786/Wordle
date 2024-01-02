@@ -1,4 +1,5 @@
 import './App.css'
+import Header from './Components/Header'
 
 /*
  ** ** == ==================================================
@@ -17,7 +18,7 @@ interface AppProps extends React.HTMLAttributes<HTMLDivElement> {
 function App({ children, ...delegated }: AppProps) {
    return (
       <div className="App" {...delegated}>
-         <h1>Wordle</h1>
+         <Header />
       </div>
    )
 }

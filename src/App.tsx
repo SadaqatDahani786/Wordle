@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './Components/Header'
+import LettersGrid from './Components/LettersGrid'
 
 /*
  ** ** == ==================================================
@@ -19,6 +20,9 @@ function App({ children, ...delegated }: AppProps) {
    return (
       <div className="App" {...delegated}>
          <Header />
+         <main>
+            <LettersGrid />
+         </main>
       </div>
    )
 }

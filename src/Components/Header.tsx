@@ -26,11 +26,12 @@ const Nav = styled.div`
 const ButtonsGroup = styled.div`
    display: flex;
    gap: 4px;
+   position: absolute;
+   right: 0;
 `
 
 //Logo
 const Logo = styled.h1`
-   margin: 0 auto;
    color: inherit;
 `
 
